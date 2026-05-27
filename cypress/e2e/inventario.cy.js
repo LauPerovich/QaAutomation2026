@@ -19,7 +19,7 @@ describe('Inventario - Sauce Demo', () => {
 
         cy.get('.inventory_item_name').eq(0).should('have.text','Sauce Labs Onesie')
         cy.get('.inventory_item_price').first().should('have.text','$7.99')
-        // cy.get('.inventory_item_price').last().should('have.text','$7.99')
+        cy.get('.inventory_item_price').last().should('have.text','$7.99')
     })
 
 })
