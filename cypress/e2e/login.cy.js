@@ -46,4 +46,17 @@ describe("Login Sauce Demo", () => {
       .should("be.visible")
       .and("contain", "Epic sadface: Sorry, this user has been locked out.");
   });
+
+  it("Logout desde el menú hamburguesa", () => {
+    // cy.log("Test 5");
+    cy.get('[data-test="username"]').type("standard_user");
+    cy.get('[data-test="password"]').type("secret_sauce");
+    cy.get('[data-test="login-button"]').click();
+
+    cy.get('[id="react-burger-menu-btn"]').click();
+    cy.get('[data-test="logout-sidebar-link"]').click();
+
+    cy.get('[data-test="username"]').should("be.empty");
+    cy.get('[data-test="password"]').should("be.empty");
+  });
 });
