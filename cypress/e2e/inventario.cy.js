@@ -20,6 +20,6 @@ describe("Inventario - Sauce Demo", () => {
       .eq(0)
       .should("have.text", "Sauce Labs Onesie");
     cy.get(".inventory_item_price").first().should("have.text", "$7.99");
-    cy.get(".inventory_item_price").last().should("have.text", "$7.99");
+    cy.get(".inventory_item_price").last().should("have.text", "$49.99");
   });
 });
