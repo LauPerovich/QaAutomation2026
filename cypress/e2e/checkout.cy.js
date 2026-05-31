@@ -21,5 +21,15 @@ describe("Checkout - Sauce Demo", () => {
       cy.get('[data-test="continue"]').click();
       cy.get('[data-test="finish"]').click();
     });
+
+    it("Checkout sin completar campos obligatorios", () => {
+      cy.get('[data-test="continue"]').click();
+      cy.get('[data-test="error"]').should(
+        "have.text",
+        "Error: First Name is required",
+      );
+      cy.get('[data-test="continue"]').click();
+      cy.url().should("include", "/checkout-step-one.html");
+    });
   });
 });
