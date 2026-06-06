@@ -1,0 +1,23 @@
+{
+  "registroValido": {
+    "nombre": "Carlos Mendoza",
+    "email": "carlos.mendoza@example.com",
+    "comentarios": "Interesado en participar en las próximas conferencias de desarrollo de software.",
+    "pais": "México",
+    "genero": "male",
+    "intereses": ["dev", "testing"],
+    "experiencia": 5,
+    "fechaNacimiento": "1993-08-14"
+  },
+  "registroAlternativo": {
+    "nombre": "Ana Sofía Rodríguez",
+    "email": "ana.rodriguez@example.com",
+    "comentarios": "Disponible para proyectos freelance a tiempo parcial.",
+    "pais": "Colombia",
+    "genero": "female",
+    "intereses": ["Diseño UX/UI", "Fotografía"],
+    "experiencia": 3,
+    "fechaNacimiento": "1997-03-22",
+    "colorFavorito": "#3498db"
+  }
+}
